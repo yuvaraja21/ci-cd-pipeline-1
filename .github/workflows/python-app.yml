@@ -41,11 +41,11 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      -name: Checkout Code
-      uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-      -name: Deploy to Production
-      run: |
-        echo "Starting Deployment..."
+      - name: Deploy to Production
+        run: |
+          echo "Starting Deployment..."
         # Replace this echo with actual deployment commands, for example:
         # ssh user@your-server "cd/path/to/project && git pull && systemctl restart yoour-service"
